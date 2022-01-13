@@ -48,5 +48,14 @@ The project uses a sample html invoice template which is then filled with releva
 6. The generated pdf invoice might look like the screenshot in '/sample_screenshot.png'.
 7. Finally run `npm start` to run the project.
 
-# LICENCE
+## Deployment
+To deploy it with Mongodb Atlas Realm functions follow the below instructions:
+1. Create a new app in Realm.
+2. Install realm-cli locally with `npm install -g mongodb-realm-cli`
+3. Create API key(Access Manager) and login with `realm-cli login`
+4. Now pull your created app with `realm-cli pull --remote=**App_ID**`
+5. Move the whole code to `/functions`
+6. Run `realm-cli push` to add the changes.
+
+## LICENCE
 Apache-2.0
