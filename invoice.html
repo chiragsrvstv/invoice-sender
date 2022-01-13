@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Invoice pdf</title>
+    <meta name="title" content="Invoice" />
+    <style type="text/css">
+      body {
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      #page_1 {
+        position: relative;
+        overflow: hidden;
+        margin: 43px 10px 35px 38px;
+        padding: 0px;
+        border: none;
+      }
+
+      #page_1 #p1dimg1 {
+        position: absolute;
+        top: 285px;
+        left: 1px;
+        z-index: -1;
+        width: 680px;
+        height: 3px;
+        font-size: 1px;
+        line-height: nHeight;
+      }
+      #page_1 #p1dimg1 #p1img1 {
+        width: 680px;
+        height: 3px;
+      }
+
+      .ft0 {
+        font: 12px 'Arial';
+        line-height: 14px;
+      }
+      .ft1 {
+        font: 11px 'Arial';
+        line-height: 14px;
+      }
+      .ft2 {
+        font: 1px 'Arial';
+        line-height: 1px;
+      }
+      .ft3 {
+        font: 12px 'Arial';
+        color: #1460aa;
+        line-height: 14px;
+      }
+      .ft4 {
+        font: 20px 'Arial';
+        line-height: 22px;
+      }
+      .ft5 {
+        font: 11px 'Arial';
+        color: #1460aa;
+        line-height: 14px;
+      }
+
+      .p0 {
+        text-align: right;
+        padding-right: 142px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p1 {
+        text-align: right;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p2 {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p3 {
+        text-align: right;
+        padding-right: 33px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p4 {
+        text-align: left;
+        padding-left: 34px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p5 {
+        text-align: right;
+        padding-right: 42px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p6 {
+        text-align: left;
+        padding-left: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p7 {
+        text-align: left;
+        padding-left: 6px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p8 {
+        text-align: right;
+        padding-right: 34px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p9 {
+        text-align: right;
+        padding-right: 7px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p10 {
+        text-align: right;
+        padding-right: 43px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p11 {
+        text-align: right;
+        padding-right: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+      }
+      .p12 {
+        text-align: left;
+        margin-top: 73px;
+        margin-bottom: 0px;
+      }
+      .p13 {
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+      .p14 {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .p15 {
+        text-align: left;
+        margin-top: 1px;
+        margin-bottom: 0px;
+      }
+
+      .td0 {
+        padding: 0px;
+        margin: 0px;
+        width: 219px;
+        vertical-align: bottom;
+      }
+      .td1 {
+        padding: 0px;
+        margin: 0px;
+        width: 77px;
+        vertical-align: bottom;
+      }
+      .td2 {
+        padding: 0px;
+        margin: 0px;
+        width: 174px;
+        vertical-align: bottom;
+      }
+      .td3 {
+        padding: 0px;
+        margin: 0px;
+        width: 150px;
+        vertical-align: bottom;
+      }
+      .td4 {
+        padding: 0px;
+        margin: 0px;
+        width: 227px;
+        vertical-align: bottom;
+      }
+      .td5 {
+        padding: 0px;
+        margin: 0px;
+        width: 115px;
+        vertical-align: bottom;
+      }
+      .td6 {
+        padding: 0px;
+        margin: 0px;
+        width: 333px;
+        vertical-align: bottom;
+      }
+      .td7 {
+        padding: 0px;
+        margin: 0px;
+        width: 205px;
+        vertical-align: bottom;
+      }
+      .td8 {
+        padding: 0px;
+        margin: 0px;
+        width: 68px;
+        vertical-align: bottom;
+      }
+      .td9 {
+        padding: 0px;
+        margin: 0px;
+        width: 67px;
+        vertical-align: bottom;
+      }
+      .td10 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 205px;
+        vertical-align: bottom;
+      }
+      .td11 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 68px;
+        vertical-align: bottom;
+      }
+      .td12 {
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 67px;
+        vertical-align: bottom;
+      }
+
+      .tr0 {
+        height: 22px;
+      }
+      .tr1 {
+        height: 16px;
+      }
+      .tr2 {
+        height: 19px;
+      }
+      .tr3 {
+        height: 25px;
+      }
+      .tr4 {
+        height: 24px;
+      }
+      .tr5 {
+        height: 40px;
+      }
+      .tr6 {
+        height: 43px;
+      }
+      .tr7 {
+        height: 61px;
+      }
+      .tr8 {
+        height: 26px;
+      }
+      .tr9 {
+        height: 31px;
+      }
+
+      .t0 {
+        width: 296px;
+        margin-right: 15px;
+        margin-left: 285px;
+        font: 12px 'Arial';
+      }
+      .t1 {
+        width: 666px;
+        margin-right: 15px;
+        margin-left: 7px;
+        margin-top: 65px;
+        font: 12px 'Arial';
+      }
+      .t2 {
+        width: 673px;
+        margin-right: 15px;
+        margin-left: 7px;
+        margin-top: 78px;
+        font: 12px 'Arial';
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page_1">
+      <div id="p1dimg1">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqgAAAADCAIAAADQnmoPAAAALElEQVRYhe3VMQEAMAjAMIYGBKJvKueCHSQK+vVU3wAAdsjfAQDAHOMHgEUeFvkBJN1QvgcAAAAASUVORK5CYII="
+          id="p1img1"
+        />
+      </div>
+
+      <table cellpadding="0" cellspacing="0" class="t0">
+        <tr>
+          <td class="tr0 td0"><p class="p0 ft0">{{fullname}}</p></td>
+          <td class="tr0 td1"><p class="p1 ft0">{{address1}}</p></td>
+        </tr>
+        <tr>
+          <td class="tr1 td0"><p class="p0 ft1">{{phone}}</p></td>
+          <td class="tr1 td1"><p class="p1 ft0">{{address2}}</p></td>
+        </tr>
+        <tr>
+          <td class="tr2 td0"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr2 td1"><p class="p1 ft0">{{address3}}</p></td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="t1">
+        <tr>
+          <td class="tr3 td2"><p class="p2 ft3">Billed To</p></td>
+          <td class="tr3 td3"><p class="p3 ft3">Date of Issue</p></td>
+          <td class="tr3 td4"><p class="p4 ft3">Invoice Number</p></td>
+          <td class="tr3 td5"><p class="p2 ft3">Amount Due (INR)</p></td>
+        </tr>
+        <tr>
+          <td class="tr4 td2"><p class="p2 ft0">{{billingAddress1}}</p></td>
+          <td class="tr4 td3"><p class="p5 ft0">{{issueDate}}</p></td>
+          <td class="tr4 td4"><p class="p4 ft0">{{invoiceSerial}}</p></td>
+          <td rowspan="2" class="tr5 td5"><p class="p6 ft4">₹ {{amountDue}}</p></td>
+        </tr>
+        <tr>
+          <td class="tr1 td2"><p class="p2 ft0">{{billingAddress2}}</p></td>
+          <td class="tr1 td3"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr1 td4"><p class="p2 ft2">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td class="tr1 td2"><p class="p2 ft0">{{billingAddress3}}</p></td>
+          <td class="tr1 td3"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr1 td4"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr1 td5"><p class="p2 ft2">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td class="tr2 td2"><p class="p2 ft0">{{billingAddress4}}</p></td>
+          <td class="tr2 td3"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr2 td4"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr2 td5"><p class="p2 ft2">&nbsp;</p></td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="t2">
+        <tr>
+          <td class="tr3 td6"><p class="p2 ft3">Description</p></td>
+          <td class="tr3 td7"><p class="p7 ft3">Rate</p></td>
+          <td class="tr3 td8"><p class="p8 ft3">Qty</p></td>
+          <td class="tr3 td9"><p class="p9 ft5">Line Total</p></td>
+        </tr>
+        <tr>
+          <td class="tr4 td6">
+            <p class="p2 ft0">{{itemDescription}}</p>
+          </td>
+          <td rowspan="2" class="tr6 td7"><p class="p7 ft0">₹ {{invoiceRate}}</p></td>
+          <td class="tr4 td8"><p class="p2 ft2">&nbsp;</p></td>
+          <td rowspan="2" class="tr6 td9"><p class="p9 ft0">₹ {{lineTotal}}</p></td>
+        </tr>
+        <tr>
+          <td class="tr2 td6">
+            <p class="p2 ft0">{{period}}</p>
+          </td>
+          <td class="tr2 td8"><p class="p10 ft0">{{quantity}}</p></td>
+        </tr>
+        <!-- <tr>
+          <td class="tr7 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr7 td7"><p class="p11 ft0">Subtotal</p></td>
+          <td class="tr7 td8"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr7 td9"><p class="p9 ft0">{{lineTotal}}</p></td>
+        </tr> -->
+        <tr>
+          <td class="tr3 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td10"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td11"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td12"><p class="p2 ft2">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td class="tr8 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr8 td7"><p class="p11 ft0">Total</p></td>
+          <td class="tr8 td8"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr8 td9"><p class="p9 ft0">{{total}}</p></td>
+        </tr>
+        <tr>
+          <td class="tr9 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr9 td7"><p class="p11 ft0">Amount Paid</p></td>
+          <td class="tr9 td8"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr9 td9"><p class="p9 ft0">0.00</p></td>
+        </tr>
+        <tr>
+          <td class="tr3 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td10"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td11"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr4 td12"><p class="p2 ft2">&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td class="tr3 td6"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr3 td7"><p class="p7 ft3">Amount Due (INR)</p></td>
+          <td class="tr3 td8"><p class="p2 ft2">&nbsp;</p></td>
+          <td class="tr3 td9"><p class="p9 ft0">₹ {{amountDue}}</p></td>
+        </tr>
+      </table>
+      <p class="p12 ft3">Notes</p>
+      <p class="p13 ft0">PAN - {{pan}}</p>
+      <p class="p14 ft0">Bank Name - {{bannkName}}</p>
+      <p class="p14 ft0">Branch Name - {{branchName}}</p>
+      <p class="p14 ft0">SWIFT Code - {{swiftCode}}</p>
+      <p class="p14 ft0">IFSC Code - {{ifsc}}</p>
+      <p class="p14 ft0">Bank Account No. - {{bankAccount}}</p>
+      <p class="p15 ft0">Bank Account Name - {{bankAccountName}}</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "monthly-invoice-sender",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "chirag",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "dotenv": "^11.0.0",
+    "html-pdf": "^3.0.1",
+    "mustache": "^4.2.0",
+    "nodemailer": "^6.7.2"
+  }
+}
