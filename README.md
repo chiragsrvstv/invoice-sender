@@ -1,6 +1,6 @@
 # Automated Invoice Sender
 
-Generate and send automated monthly invoices with ease 🏎 <br>
+Generate and send automated monthly invoices with ease 🏁 <br>
 This project might be helpful you if you usually end up in a situation where you need to manually generate invoices(pdf) at the end of every month and need to email it to your clients/orgs. This project aims to solve that particular pain point by automating the whole flow. It could be ran locally from the cli or could be deployed as a serverless function that'd trigger every month ✌️
 
 ## Usage
@@ -47,15 +47,6 @@ The project uses a sample html invoice template which is then filled with releva
 5. Now add all the remaining environment variables such as the `INVOICE_` ones which would be replaced in the sample HTML invoice template.
 6. The generated pdf invoice might look like the screenshot in '/sample_screenshot.png'.
 7. Finally run `npm start` to run the project.
-
-## Deployment
-To deploy it with Mongodb Atlas Realm functions follow the below instructions:
-1. Create a new app in Realm.
-2. Install realm-cli locally with `npm install -g mongodb-realm-cli`
-3. Create API key(Access Manager) and login with `realm-cli login`
-4. Now pull your created app with `realm-cli pull --remote=**App_ID**`
-5. Move the whole code to `/functions`
-6. Run `realm-cli push` to add the changes.
 
 ## LICENCE
 Apache-2.0
