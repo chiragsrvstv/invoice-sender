@@ -1,7 +1,8 @@
 # Automated Invoice Sender
 
 Generate and send automated monthly invoices with ease 🏁 <br>
-This project might be helpful you if you usually end up in a situation where you need to manually generate invoices(pdf) at the end of every month and need to email it to your clients/orgs. This project aims to solve that particular pain point by automating the whole flow. It could be ran locally from the cli or could be deployed as a serverless function that'd trigger every month ✌️
+
+This project might be helpful if you usually end up in a situation like me where you need to manually generate invoices(pdf) at the end of every month and need to email it to your clients/orgs. This project aims to solve that particular pain point by automating the whole flow. It could be run locally from the cli or could be deployed as a serverless function that'd trigger every month ✌️
 
 ## Usage
 The project uses a sample html invoice template which is then filled with relevant data and a pdf file is generated out of it. Then this pdf file is attached in the email and then finally is sent to the relevant recipients. You can always consider using own html template and use the same variables to generate and send a custom invoice.
